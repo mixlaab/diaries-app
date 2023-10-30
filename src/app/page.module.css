@@ -3,19 +3,24 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  padding: 1rem;
+}
+
+.title {
+  font-size: xx-large;
+  margin: 2rem;
 }
 
 .description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
   font-size: 0.85rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .description a {
@@ -26,8 +31,7 @@
 }
 
 .description p {
-  position: relative;
-  margin: 0;
+  margin: 1rem;
   padding: 1rem;
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
@@ -227,3 +231,15 @@
     transform: rotate(0deg);
   }
 }
+
+.buttonContainer {
+  display: inline-block; /* This allows the container to wrap the button */
+  width: 10rem; /* Set a fixed width for the container */
+}
+
+.callApiText {
+  display: block;
+  transition: all 0.2s ease-in;
+  transform: translateX(0.2em);
+}
+
